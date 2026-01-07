@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Places</title>
+</head>
+<body>
+
+  <h1><%= welcomeMessage %></h1>
+
+  <ul>
+    <% for (var i = 0; i < travelPlaces.length; i++) { %>
+      <li>
+        <strong><%= travelPlaces[i].name %></strong> - <%= travelPlaces[i].country %>
+        <% if (travelPlaces[i].isPopular) { %>
+          Popular Destination!
+        <% } %>
+      </li>
+    <% } %>
+  </ul>
+  <script>
+    alert("<%= welcomeMessage %>");
+  </script>
+</body>
+</html>

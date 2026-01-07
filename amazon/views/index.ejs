@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= storeName %></title>
+</head>
+<body>
+
+  <h1><%= storeName %></h1>
+
+
+  <ul>
+    <% books.forEach(function(book) { %>
+      <li><%= book.title %> - <%= book.author %></li>
+    <% }); %>
+  </ul>
+
+  <script>
+    console.log("Welcome to My Book Store!");
+  </script>
+</body>
+</html>
