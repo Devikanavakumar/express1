@@ -1,0 +1,80 @@
+<div class="container d-flex flex-column align-items-center justify-content-center py-5" style="min-height: 90vh;">
+  
+  <div class="row w-100 justify-content-center">
+    <div class="col-md-6 col-lg-5">
+      
+      <div class="card shadow-lg border-0">
+        <div class="card-header bg-dark text-white text-center py-4">
+          <h2 class="fw-bold mb-0">Create Account</h2>
+          <p class="text-secondary small mb-0">Join the LOCUS community</p>
+        </div>
+
+        <div class="card-body p-4 p-md-5">
+          <form action="/signup" method="POST">
+            
+            <div class="mb-3">
+              <label class="form-label fw-bold small text-uppercase">Username</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0"><i class="bi bi-person"></i></span>
+                <input type="text" name="username" class="form-control border-start-0 shadow-none" placeholder="johndoe" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold small text-uppercase">Email</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0"><i class="bi bi-envelope"></i></span>
+                <input type="email" name="email" class="form-control border-start-0 shadow-none" placeholder="name@example.com" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-bold small text-uppercase">Password</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0"><i class="bi bi-lock"></i></span>
+                <input type="password" name="password" class="form-control border-start-0 shadow-none" placeholder="••••••••" required>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label fw-bold small text-uppercase">Confirm Password</label>
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0"><i class="bi bi-shield-check"></i></span>
+                <input type="password" name="confirmPassword" class="form-control border-start-0 shadow-none" placeholder="••••••••" required>
+              </div>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg fw-bold shadow-sm py-3 transition">
+                Create Account
+              </button>
+            </div>
+
+          </form>
+
+          <div class="text-center mt-4">
+            <p class="text-muted small">
+              Already have an account? 
+              <a href="/login" class="text-primary fw-bold text-decoration-none border-bottom border-primary border-2">Login</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="text-center mt-4 text-muted small">
+        <p>&copy; 2026 LOCUS. Your data, your control.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .transition { transition: all 0.2s ease-in-out; }
+  .btn-primary:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3) !important;
+  }
+  .card { border-radius: 15px; overflow: hidden; }
+</style>

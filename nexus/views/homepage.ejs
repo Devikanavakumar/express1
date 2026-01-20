@@ -1,0 +1,38 @@
+<div class="container d-flex flex-column align-items-center justify-content-center text-center vh-100">
+    <div class="col-lg-8 animate-fade-in">
+        <h1 class="display-3 fw-bold mb-3">Welcome to <span class="text-primary">NEXUS</span>!</h1>
+        <p class="lead text-muted mb-4">We are thrilled to have you here. Your journey to a more organized life begins now.</p>
+
+        <div class="card shadow-sm border-0 bg-light p-4 mb-5">
+            <h5 class="fw-bold mb-3 text-dark">Your personal dashboard allows you to:</h5>
+            <ul class="list-unstyled text-start d-inline-block mx-auto">
+                <li class="mb-2"><i class="bi bi-shield-check text-primary me-2"></i> Save your notes securely</li>
+                <li class="mb-2"><i class="bi bi-person-gear text-primary me-2"></i> Manage your account settings</li>
+                <li class="mb-2"><i class="bi bi-stars text-primary me-2"></i> Explore exciting features</li>
+                <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i> Stay organized effortlessly</li>
+            </ul>
+        </div>
+
+        <p class="mb-4 text-secondary">Enjoy your journey with us!</p>
+
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="/login" class="btn btn-primary btn-lg px-5 py-3 shadow fw-bold rounded-pill transition">
+                GET STARTED <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .animate-fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .transition:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+</style>
